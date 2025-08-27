@@ -71,7 +71,8 @@ export function legacyFormatString(
 
 	const uuid_checks = checks.filter((c) => c instanceof z4.ZodUUID);
 	if (uuid_checks.length > 0) {
-		const uuid_schema = z4.uuid({ version: uuid_checks[0]!.def.version });
+		const check = uuid_checks[0]! as any;
+		const uuid_schema = z4.uuid({ version: check.def.version! });
 		uuid_schema._zod.def.checks = checks;
 		return generate(uuid_schema, ctx);
 	}

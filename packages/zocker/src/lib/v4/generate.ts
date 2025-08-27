@@ -67,7 +67,7 @@ export function generate<Z extends z.$ZodType>(
 ): z.infer<Z> {
 	increment_recursion_count(schema, ctx);
 	try {
-		return generate_value(schema, ctx);
+		return generate_value(schema, ctx) as z.infer<Z>;
 	} finally {
 		decrement_recursion_count(schema, ctx);
 	}
