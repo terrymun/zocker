@@ -1,5 +1,11 @@
 # zocker
 
+## 3.0.0
+
+### Major Changes
+
+- 27b24b7: Upgrade @faker-js/faker to v10, drop node18 support
+
 ## 2.3.0
 
 ### Minor Changes

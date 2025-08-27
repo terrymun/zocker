@@ -1,5 +1,12 @@
 # e2e-zod3
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated dependencies [27b24b7]
+  - zocker@3.0.0
+
 ## 0.1.0
 
 ### Minor Changes
